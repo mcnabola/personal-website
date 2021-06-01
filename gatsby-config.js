@@ -1,34 +1,18 @@
+const siteMetadata = {
+  title: `Mark W McNabola`,
+  description: `This is my coding blog.`,
+};
+
 module.exports = {
-  siteMetadata: {
-    title: "mark w mcnabola",
-  },
+  siteMetadata,
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
+    `gatsby-plugin-mdx`,
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        icon: "src/images/icon.png",
+        path: `${__dirname}/content`,
+        name: `content`,
       },
-    },
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: "./src/pages/",
-      },
-      __key: "pages",
     },
   ],
 };
