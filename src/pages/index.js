@@ -1,4 +1,3 @@
-import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { useSiteMetadata } from "../hooks/use-site-metadata";
 

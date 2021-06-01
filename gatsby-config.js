@@ -6,6 +6,7 @@ const siteMetadata = {
 module.exports = {
   siteMetadata,
   plugins: [
+    `gatsby-plugin-theme-ui`,
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
