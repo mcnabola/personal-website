@@ -1,12 +1,10 @@
 import React from "react";
-import { Layout } from "../components/layout";
 import { graphql, Link as GatsbyLink } from "gatsby";
 import { Box, Heading, Link } from "theme-ui";
 
 export default function IndexPage( { data } ) {
   return (
   <>
-    <Layout>
     {data.allMdx.nodes.map(({ id, excerpt, frontmatter, slug }) => (
           <Box
             key={id}
@@ -30,7 +28,6 @@ export default function IndexPage( { data } ) {
             </Link>
           </Box>
         ))}
-      </Layout>
     </>
   );
 }
