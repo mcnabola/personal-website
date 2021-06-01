@@ -6,7 +6,7 @@ import { Box } from "theme-ui";
 export default function PostPage ({data}) {
     const {
         body,
-        fontmatter: {title},
+        frontmatter: {title},
     } = data.mdx;
     return (<>
         <Box as="h1" variant="styles.h1" fontSize="4xl">
