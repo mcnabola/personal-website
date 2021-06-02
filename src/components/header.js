@@ -17,7 +17,7 @@ export const Header = ( {siteTitle, menuLinks} ) => {
                 }}
         >
             {menuLinks.map(link => (
-                <Link as={GatsbyLink} to={link.link}>
+                <Link as={GatsbyLink} to={link.link} sx={{ p: 1 }}>
                 <Heading>{link.name}</Heading>
                 </Link>
             )) }

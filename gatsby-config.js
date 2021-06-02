@@ -3,12 +3,12 @@ const siteMetadata = {
   description: `This is my coding blog.`,
   menuLinks:[
       {
-        name:'home',
+        name:'<Mark/>',
         link:'/'
       },
       {
-        name:'<Mark/>',
-        link:'/page-2'
+        name:'blog',
+        link:'/blog'
       }
   ]
 };
