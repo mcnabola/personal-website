@@ -5,10 +5,12 @@ import { Header } from "./header";
 
 export const Layout = ({ children }) => {
 
-    const {title, description} = useSiteMetadata();
+    const {title, description, menuLinks} = useSiteMetadata();
+    
+    console.log(title + "\n" + description + "\n" + menuLinks )
     return (
         <>
-            <Header siteTitle={title} siteDescription={description} />
+            <Header siteTitle={title} menuLinks={menuLinks} />
             <Box
                 as="div"
                 sx={{

@@ -1,6 +1,16 @@
 const siteMetadata = {
   title: `Mark W McNabola`,
   description: `This is my coding blog.`,
+  menuLinks:[
+      {
+        name:'home',
+        link:'/'
+      },
+      {
+        name:'<Mark/>',
+        link:'/page-2'
+      }
+  ]
 };
 
 module.exports = {
