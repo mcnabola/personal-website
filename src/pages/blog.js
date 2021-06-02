@@ -10,23 +10,34 @@ export default function Blog( { data } ) {
         key={id}
         as="article"
         sx={{
-          mb: 4,
+          mb: 2,
           p: 3,
-          boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
-          border: "1px solid #d1d1d1",
-          borderRadius: "15px",
+          
         }}
       >
+      
         <Link as={GatsbyLink} to={`/${slug}`}>
-          <Heading>{frontmatter.title}</Heading>
+        <Box as="p">
+            {frontmatter.date} - - {frontmatter.title} 
+          </Box>
+          {/*<Heading>{frontmatter.title}</Heading>
           <Box as="p" variant="styles.p">
             {frontmatter.date}
           </Box>
           <Box as="p" variant="styles.p">
             {excerpt}
           </Box>
+          
+          part of sx for box at start
+          boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+          border: "1px solid #d1d1d1",
+          borderRadius: "15px",
+          
+          */}
         </Link>
+
       </Box>
+      
     ))}
   </>
   );
