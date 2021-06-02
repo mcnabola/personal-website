@@ -6,8 +6,6 @@ import { Header } from "./header";
 export const Layout = ({ children }) => {
 
     const {title, description, menuLinks} = useSiteMetadata();
-    
-    console.log(title + "\n" + description + "\n" + menuLinks )
     return (
         <>
             <Header siteTitle={title} menuLinks={menuLinks} />
